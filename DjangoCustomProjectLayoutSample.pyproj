@@ -69,6 +69,7 @@
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\another_page.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\index.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\layout.html" />
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>

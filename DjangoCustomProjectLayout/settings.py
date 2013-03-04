@@ -1,8 +1,4 @@
 # Django settings for DjangoCustomProjectLayout project.
-from sys import path
-import os
-
-ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -109,8 +105,11 @@ ROOT_URLCONF = 'DjangoCustomProjectLayout.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'DjangoCustomProjectLayout.wsgi.application'
 
+import os
 TEMPLATE_DIRS = (
-    ROOT_PATH.replace("\\", "/") + "/my_app/views"
+    # Resgister template dirs you must do this for each app :(
+    os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/my_app/views"
+
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
