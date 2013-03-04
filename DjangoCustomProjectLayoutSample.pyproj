@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>DjangoCustomProjectLayoutSample</Name>
+    <RootNamespace>DjangoApplication1</RootNamespace>
+    <UseIISExpress>true</UseIISExpress>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <InterpreterPath />
+    <InterpreterArguments>
+    </InterpreterArguments>
+    <DjangoSettingsModule />
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8ec1977e-0683-4426-9069-8ea231f13f97</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>c:\Python27\Lib\site-packages\django\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DjangoCustomProjectLayout\django_utils\front_view.py" />
+    <Compile Include="DjangoCustomProjectLayout\django_utils\urls.py" />
+    <Compile Include="DjangoCustomProjectLayout\django_utils\__init__.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\controllers\HelloWorldController.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\controllers\__init__.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\models.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\tests.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="DjangoCustomProjectLayout\__init__.py" />
+    <Compile Include="DjangoCustomProjectLayout\settings.py" />
+    <Compile Include="DjangoCustomProjectLayout\urls.py" />
+    <Compile Include="DjangoCustomProjectLayout\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
+      <Feed>https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml</Feed>
+      <ProductId>Django</ProductId>
+      <FriendlyName>Django 1.4</FriendlyName>
+    </WebPiReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DjangoCustomProjectLayout" />
+    <Folder Include="DjangoCustomProjectLayout\my_app" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\controllers" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\views" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\views\HelloWorld" />
+    <Folder Include="DjangoCustomProjectLayout\django_utils\" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\another_page.html" />
+    <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\index.html" />
+    <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\layout.html" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6524/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
