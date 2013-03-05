@@ -74,6 +74,7 @@
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\index.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\heyYou\action.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\heyYou\index.html" />
+    <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\a_shared_view.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\layout.html" />
     <Content Include="README.md" />
   </ItemGroup>
