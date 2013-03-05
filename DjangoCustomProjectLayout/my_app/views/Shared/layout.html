@@ -5,6 +5,16 @@
 
     <body>
         <h1>{% block heading %}{% endblock %}</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/my_app/HelloWorld">Hello world controller</a>
+                </li>
+                <li>
+                    <a href="/my_app/heyYou">Hey you controller</a>
+                </li>
+            </ul>
+        </nav>
         <div>
             {% block content %}{% endblock %}
         </div>

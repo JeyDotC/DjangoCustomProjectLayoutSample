@@ -1,13 +1,15 @@
 from django.conf.urls import patterns, include, url
-from django_utils.urls import convention_urls
+from django_utils.net_mvc import NetMvcConvention
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
+net_mvc_convention = NetMvcConvention(rootNamespace="DjangoCustomProjectLayout")
+
 urlpatterns = patterns('',
-    url(r'^$', 'DjangoCustomProjectLayout.my_app.controllers.HelloWorldController.index', name='home'),
-    ('', convention_urls(root_namespace="DjangoCustomProjectLayout"))
+    url(r'^$', net_mvc_convention.run, kwargs = {'app_name':'my_app', 'controller_name':'HelloWorld', 'method_name':'index'}),
+    ('', net_mvc_convention.urls())
     # Examples:
     # url(r'^DjangoCustomProjectLayout/', include('DjangoCustomProjectLayout.DjangoCustomProjectLayout.urls')),
 

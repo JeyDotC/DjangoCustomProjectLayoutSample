@@ -35,12 +35,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DjangoCustomProjectLayout\django_utils\front_view.py" />
-    <Compile Include="DjangoCustomProjectLayout\django_utils\urls.py" />
+    <Compile Include="DjangoCustomProjectLayout\django_utils\convention.py" />
+    <Compile Include="DjangoCustomProjectLayout\django_utils\net_mvc.py" />
     <Compile Include="DjangoCustomProjectLayout\django_utils\__init__.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\controllers\HelloWorldController.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\controllers\heyYouController.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\controllers\__init__.py" />
-    <Compile Include="DjangoCustomProjectLayout\my_app\models.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\models\hello.py" />
+    <Compile Include="DjangoCustomProjectLayout\my_app\models\__init__.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\tests.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\__init__.py" />
     <Compile Include="manage.py" />
@@ -60,14 +62,18 @@
     <Folder Include="DjangoCustomProjectLayout" />
     <Folder Include="DjangoCustomProjectLayout\my_app" />
     <Folder Include="DjangoCustomProjectLayout\my_app\controllers" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\models\" />
     <Folder Include="DjangoCustomProjectLayout\my_app\views" />
     <Folder Include="DjangoCustomProjectLayout\my_app\views\HelloWorld" />
     <Folder Include="DjangoCustomProjectLayout\django_utils\" />
+    <Folder Include="DjangoCustomProjectLayout\my_app\views\heyYou\" />
     <Folder Include="DjangoCustomProjectLayout\my_app\views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\another_page.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\index.html" />
+    <Content Include="DjangoCustomProjectLayout\my_app\views\heyYou\action.html" />
+    <Content Include="DjangoCustomProjectLayout\my_app\views\heyYou\index.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\layout.html" />
     <Content Include="README.md" />
   </ItemGroup>

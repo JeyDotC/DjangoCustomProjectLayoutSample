@@ -1,0 +1,14 @@
+{% extends "Shared/layout.html" %}
+
+{% block head_title %}Hey you{% endblock %}
+
+{% block heading %}Hey you!{% endblock %}
+
+{% block content %}
+<a href="/my_app/heyYou/other_template">View this from another url</a>
+<form method="post" action="/my_app/heyYou/action">
+    {% csrf_token %}
+    What are you doing? <input type="text" name="what" />
+    <input type="submit" value="Send" />
+</form>
+{% endblock %}
