@@ -6,6 +6,7 @@ class BootstrapConvention:
         Implementor must return the url patterns
         recognized by this convention.
         """
+
     def run(self, request, *args, **kwargs):
         """
         This is the bootstrap method, all the requests
@@ -15,6 +16,7 @@ class BootstrapConvention:
         Implementor must resolve the module that will finally handle
         the request and return it's result
         """
+
     def urls(self):
         front_view_run = self.run
         controllers = [url(pattern, front_view_run) for pattern in self.patterns()]

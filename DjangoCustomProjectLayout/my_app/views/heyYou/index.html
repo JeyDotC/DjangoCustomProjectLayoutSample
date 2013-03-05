@@ -5,8 +5,8 @@
 {% block heading %}Hey you!{% endblock %}
 
 {% block content %}
-<a href="/my_app/heyYou/other_template">View this from another url</a>
-<form method="post" action="/my_app/heyYou/action">
+<a href="/NetMVC/my_app/heyYou/other_template">View this from another url</a>
+<form method="post" action="/NetMVC/my_app/heyYou/action">
     {% csrf_token %}
     What are you doing? <input type="text" name="what" />
     <input type="submit" value="Send" />

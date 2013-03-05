@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="DjangoCustomProjectLayout\django_utils\convention.py" />
     <Compile Include="DjangoCustomProjectLayout\django_utils\net_mvc.py" />
+    <Compile Include="DjangoCustomProjectLayout\django_utils\traditional.py" />
     <Compile Include="DjangoCustomProjectLayout\django_utils\__init__.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\controllers\HelloWorldController.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\controllers\heyYouController.py" />
@@ -45,6 +46,10 @@
     <Compile Include="DjangoCustomProjectLayout\my_app\models\__init__.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\tests.py" />
     <Compile Include="DjangoCustomProjectLayout\my_app\__init__.py" />
+    <Compile Include="DjangoCustomProjectLayout\traditional_app\models.py" />
+    <Compile Include="DjangoCustomProjectLayout\traditional_app\tests.py" />
+    <Compile Include="DjangoCustomProjectLayout\traditional_app\views.py" />
+    <Compile Include="DjangoCustomProjectLayout\traditional_app\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoCustomProjectLayout\__init__.py" />
     <Compile Include="DjangoCustomProjectLayout\settings.py" />
@@ -68,6 +73,9 @@
     <Folder Include="DjangoCustomProjectLayout\django_utils\" />
     <Folder Include="DjangoCustomProjectLayout\my_app\views\heyYou\" />
     <Folder Include="DjangoCustomProjectLayout\my_app\views\Shared\" />
+    <Folder Include="DjangoCustomProjectLayout\traditional_app\" />
+    <Folder Include="DjangoCustomProjectLayout\traditional_app\Templates\" />
+    <Folder Include="DjangoCustomProjectLayout\traditional_app\Templates\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DjangoCustomProjectLayout\my_app\views\HelloWorld\another_page.html" />
@@ -76,6 +84,10 @@
     <Content Include="DjangoCustomProjectLayout\my_app\views\heyYou\index.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\a_shared_view.html" />
     <Content Include="DjangoCustomProjectLayout\my_app\views\Shared\layout.html" />
+    <Content Include="DjangoCustomProjectLayout\traditional_app\Templates\another_page.html" />
+    <Content Include="DjangoCustomProjectLayout\traditional_app\Templates\index.html" />
+    <Content Include="DjangoCustomProjectLayout\traditional_app\Templates\Shared\a_shared_view.html" />
+    <Content Include="DjangoCustomProjectLayout\traditional_app\Templates\Shared\layout.html" />
     <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />

@@ -108,7 +108,8 @@ WSGI_APPLICATION = 'DjangoCustomProjectLayout.wsgi.application'
 import os
 TEMPLATE_DIRS = (
     # Resgister template dirs you must do this for each app :(
-    os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/my_app/views"
+    os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/my_app/views",
+    os.path.dirname(os.path.abspath(__file__)).replace("\\", "/") + "/traditional_app/Templates"
 
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
