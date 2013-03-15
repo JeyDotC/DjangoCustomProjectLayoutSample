@@ -6,7 +6,32 @@ from django.http import HttpResponse
 from convention import BootstrapConvention
 
 class NetMvcConvention(BootstrapConvention):
+    """
+    The .NET MVC-like implementation of BootstrapConvention.
 
+    By using this convention, an application will have a .net mvc 
+    project layout:
+
+    rootNamespace/
+        app1/
+            models/
+                __init__.py
+                nodel1.py
+                nodel2.py
+            views/
+                Name1/
+                    index.html
+                    other.html
+                Name2/
+                    a_view.html
+                Shared/
+                    layout.html
+            controllers/
+                Name1Controller.py
+                Name2Controller.py
+            __init__.py
+            tests.py
+    """
     def __init__(self, rootNamespace):
         self._rootNamespace = rootNamespace
 
@@ -23,7 +48,7 @@ class NetMvcConvention(BootstrapConvention):
 
         responder = getattr(controller, method_name, controller.index)
         responder.controller_name = controller_name
-        responder.request = request
+        view.request = request
         return responder(request, *args, **kwargs)
 
 def view(view_function, context = {}, template = None):
@@ -31,4 +56,4 @@ def view(view_function, context = {}, template = None):
     return HttpResponse(select_template((
                                 "%s/%s.html" % (view_function.controller_name, t),
                                 "Shared/%s.html" % t,
-                            )).render(RequestContext(view_function.request, context)))
+                            )).render(RequestContext(view.request, context)))
